@@ -1,7 +1,8 @@
-well:
+crispr:
   # path to cloned https://github.com/jump-cellpainting/datasets
   path: /Users/zitong/IP/datasets/metadata
-  files: well.csv.gz
-  merge_order: 1
+  files: crispr.csv.gz
+  filter: "Metadata_Symbol == Metadata_Symbol"
+  merge_order: 0
   merge_on:
     - Metadata_JCP2022

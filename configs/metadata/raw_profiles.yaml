@@ -1,5 +1,5 @@
 profile:
-  path: ../1.load/input
+  path: /Users/zitong/IP/position-effect-correction/1.load/input
   files: raw_profiles.parquet
   rename:
     dataset: Metadata_Batch

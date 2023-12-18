@@ -69,6 +69,7 @@ def read_config_data(config: dict) -> pd.DataFrame:
         pd.read_parquet(f) if f.suffix == ".parquet" else pd.read_csv(f)
         for f in data_path
     )
+    
     data = pd.concat(data, ignore_index=True)
     if "drop" in config:
         data = data.drop(config["drop"], axis=1)
